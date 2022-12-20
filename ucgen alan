@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+
+    double a,b,c,k,u,l;
+
+    Scanner girdi=new Scanner(System.in);
+
+    System.out.print("Birinci kenarı giriniz: ");
+    a=girdi.nextInt();
+
+    System.out.print("İkinci kenarı giriniz: ");
+    b=girdi.nextInt();
+
+    System.out.print("Üçüncü kenarı giriniz: ");
+    c=girdi.nextInt();
+    k=a+b+c ;
+
+    u=k/2;
+    System.out.println("Üçgenin çevresi:"+u);
+
+    l=(u*(u-a)*(u-b)*(u-c));
+    System.out.print("Üçgenin alanı : "+l);
